@@ -40,3 +40,16 @@ num2 = int(input("Please enter a second number over the first number: "))
 answer = num1 // num2
 remaining = num1 - (answer * num2)
 print( num1, "divided by", num2,"is", answer, "with", remaining, "remaining")
+#034
+menuSelection = int(input("1) square\n2) triangle\n\nEnter a number: "))
+if menuSelection == 1:
+  length = int(input("Enter a length of one side: "))
+  answer = length**2
+  print("The area of your chosen shape is", answer)
+elif menuSelection == 2:
+  length = int(input("Enter a length of the base: "))
+  height = int(input("Enter a height: "))
+  answer = length * height * 0.5
+  print("The area of your chosen shape is", answer)
+else:
+  print("The answer is wrong")
