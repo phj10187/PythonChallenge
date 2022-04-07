@@ -1,0 +1,22 @@
+#035
+name = input("Enter your name: ")
+for i in range(0,3):
+  print(name)
+  
+#036
+  name = input("Enter your name: ")
+num = int(input("how many times you want to repeat?: "))
+for i in range(0,num):
+  print(name)
+  
+#037
+name = input("Enter your name: ")
+for i in name:
+  print(i)
+
+#038
+name = input("Enter your name: ")
+num = int(input("How many times you want to repeat?: "))
+for i in range(0,num):
+  for i in name:
+    print(i)
