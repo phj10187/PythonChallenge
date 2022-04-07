@@ -53,3 +53,64 @@ elif menuSelection == 2:
   print("The area of your chosen shape is", answer)
 else:
   print("The answer is wrong")
+  
+#035
+name = input("Enter your name: ")
+for i in range(0,3):
+  print(name)
+  
+#036
+  name = input("Enter your name: ")
+num = int(input("how many times you want to repeat?: "))
+for i in range(0,num):
+  print(name)
+  
+#037
+name = input("Enter your name: ")
+for i in name:
+  print(i)
+
+#038
+name = input("Enter your name: ")
+num = int(input("How many times you want to repeat?: "))
+for i in range(0,num):
+  for i in name:
+    print(i)
+    
+#039
+num = int(input("Enter a number from 1 to 12: "))
+for i in range(0,12,1):
+  i = i + 1
+  print(num, "x", i, "=", num * i)
+
+  #040
+  num = int(input("Enter a number below 50: "))
+for i in range(50,num-1,-1):
+  print (i)
+  
+#041
+name = input("Enter your name: ")
+num = int(input("Enter a number: "))
+if num < 10:
+  for i in range(0,num):
+    print(name)
+else:
+  print("Too high!")
+  
+#042
+total = 0
+for i in range(0,5):
+  num = int(input("Enter a number: "))
+  answer = input("Do you want this number included? (y/n): ")
+  if answer == "y":
+    total = total + num
+print(total)
+
+#043
+direction = input("Enter a count direction you want(up/down): ")
+if direction == up:
+  num = int(input("Enter a biggest number: "))
+  for i in range(1, num)
+  print(i)
+elif direction = down:
+  num = int(input("Enter a number beliw 20: "))
