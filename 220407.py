@@ -114,3 +114,65 @@ if direction == up:
   print(i)
 elif direction = down:
   num = int(input("Enter a number beliw 20: "))
+  
+#044
+  answer = int(input("How many people do you want to invite?: "))
+if answer < 10:
+  for i in range(0,answer):
+    name = input("What is the name of the guest?: ")
+    print(name+" has been invited.")
+else: 
+  print("Too many people!")
+#045
+total = 0
+while total <= 50:
+  num = int(input("Enter a number: "))
+  total = total + num
+  print("The total is " ,total)
+#046
+num = 0
+while num <= 5:
+  num = int(input("Enter a number: "))
+print("The last number you entered was a", num)
+#047
+num1 = int(input("Enter a number: "))
+total = num1
+answer = "y"
+while answer == "y":
+  num2 = int(input("Enter a number: "))
+  total = total + num2
+  answer = input("Do you want add another number?: ")
+print("The total is",total)
+#048
+count = 0
+answer = "y"
+while answer =="y":
+  name = input("Enter the name of the person you want to invite to a party: ")
+  print(name,"has now been invited.")
+  count = count + 1 
+  answer = input("Do you want to invite more?")
+print("You have",count,"people coming to your party.")
+#049
+compnum = 50
+count = 1
+num = int(input("Enter a number: "))
+while num != compnum:
+  count = count + 1
+  if num < compnum:
+    print("Your number is too low")
+  else:
+    print("Your number is too high")
+  num = int(input("Enter another number: "))
+print("Well done, you took",count,"attempts.")
+#050
+num = int(input("Enter a number between 10 ~ 20: "))
+while num <= 10 or num >= 20:
+  if num <= 10:
+    print("Too low")
+  else:
+    print("Too high")
+  num = int(input("Enter another number: "))
+print("Thank you")
+#051
+
+
