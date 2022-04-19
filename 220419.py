@@ -1,178 +1,121 @@
-#026
-word = input("Please enter a word: ")
-first = word[0].lower() #소문자 첫글자
-length = len(word) 
-rest = word[1:length]
-if first != "a" and first != "e" and first != "i" and first != "o" and first != "u":
-  newword = rest + first + "ay"
+#052
+import random
+num = random.randint(0, 100)
+print(num)
+#053
+import random
+fruit = random.choice(["apple", "banana", "cherry"])
+print(fruit)
+#054
+import random
+face = random.choice(["h", "t"])
+choice = input("which one you want to choose?(h/t): ")
+if choice == face:
+  print("You win!")
 else:
-  newword = word + "way"
-print(newword.lower())
-#027
-num = float(input("Enter a number with lots of decimal places: "))
-print (num * 2)
-#028
-num = float(input("Enter a number with lots of decimal places: "))
-result = round(num * 2,2)
-print (result)
-#029
-import math
-num = int(input("Enter a number over 500: "))
-answer = math.sqrt(num)
-print(round(answer,2))
-#030
-import math
-print(round(math.pi, 2))
-#031
-import math
-radious = int(input("Enter the radious of circle: "))
-area = (radious ** 2) * math.pi
-print (area)
-#032
-import math
-radious = int(input("Enter a radious of the circle: "))
-depth = int(input("Enter a depth: "))
-area = math.pi * (radious ** 2) * depth
-print(round(area, 3))
-#033
-num1 = int(input("Please enter a first number over 0: "))
-num2 = int(input("Please enter a second number over the first number: "))
-answer = num1 // num2
-remaining = num1 - (answer * num2)
-print( num1, "divided by", num2,"is", answer, "with", remaining, "remaining")
-#034
-menuSelection = int(input("1) square\n2) triangle\n\nEnter a number: "))
-if menuSelection == 1:
-  length = int(input("Enter a length of one side: "))
-  answer = length**2
-  print("The area of your chosen shape is", answer)
-elif menuSelection == 2:
-  length = int(input("Enter a length of the base: "))
-  height = int(input("Enter a height: "))
-  answer = length * height * 0.5
-  print("The area of your chosen shape is", answer)
+  print("Bad luck")
+print("The answer is",face)
+#055
+import random
+num = random.randint(1, 5)
+answer = int(input("Enter a number between 1 to 5: "))
+if answer == num:
+  print("Well done")
 else:
-  print("The answer is wrong")
-  
-#035
-name = input("Enter your name: ")
-for i in range(0,3):
-  print(name)
-  
-#036
-  name = input("Enter your name: ")
-num = int(input("how many times you want to repeat?: "))
-for i in range(0,num):
-  print(name)
-  
-#037
-name = input("Enter your name: ")
-for i in name:
-  print(i)
-
-#038
-name = input("Enter your name: ")
-num = int(input("How many times you want to repeat?: "))
-for i in range(0,num):
-  for i in name:
-    print(i)
-    
-#039
-num = int(input("Enter a number from 1 to 12: "))
-for i in range(0,12,1):
-  i = i + 1
-  print(num, "x", i, "=", num * i)
-
-  #040
-  num = int(input("Enter a number below 50: "))
-for i in range(50,num-1,-1):
-  print (i)
-  
-#041
-name = input("Enter your name: ")
-num = int(input("Enter a number: "))
-if num < 10:
-  for i in range(0,num):
-    print(name)
-else:
-  print("Too high!")
-  
-#042
-total = 0
-for i in range(0,5):
-  num = int(input("Enter a number: "))
-  answer = input("Do you want this number included? (y/n): ")
-  if answer == "y":
-    total = total + num
-print(total)
-
-#043
-direction = input("Enter a count direction you want(up/down): ")
-if direction == up:
-  num = int(input("Enter a biggest number: "))
-  for i in range(1, num)
-  print(i)
-elif direction = down:
-  num = int(input("Enter a number beliw 20: "))
-  
-#044
-  answer = int(input("How many people do you want to invite?: "))
-if answer < 10:
-  for i in range(0,answer):
-    name = input("What is the name of the guest?: ")
-    print(name+" has been invited.")
-else: 
-  print("Too many people!")
-#045
-total = 0
-while total <= 50:
-  num = int(input("Enter a number: "))
-  total = total + num
-  print("The total is " ,total)
-#046
-num = 0
-while num <= 5:
-  num = int(input("Enter a number: "))
-print("The last number you entered was a", num)
-#047
-num1 = int(input("Enter a number: "))
-total = num1
-answer = "y"
-while answer == "y":
-  num2 = int(input("Enter a number: "))
-  total = total + num2
-  answer = input("Do you want add another number?: ")
-print("The total is",total)
-#048
-count = 0
-answer = "y"
-while answer =="y":
-  name = input("Enter the name of the person you want to invite to a party: ")
-  print(name,"has now been invited.")
-  count = count + 1 
-  answer = input("Do you want to invite more?")
-print("You have",count,"people coming to your party.")
-#049
-compnum = 50
-count = 1
-num = int(input("Enter a number: "))
-while num != compnum:
-  count = count + 1
-  if num < compnum:
-    print("Your number is too low")
-  else:
-    print("Your number is too high")
-  num = int(input("Enter another number: "))
-print("Well done, you took",count,"attempts.")
-#050
-num = int(input("Enter a number between 10 ~ 20: "))
-while num <= 10 or num >= 20:
-  if num <= 10:
-    print("Too low")
-  else:
+  if answer > num: 
     print("Too high")
-  num = int(input("Enter another number: "))
-print("Thank you")
-#051
+  else:
+    print("Too low")
+  answer = int(input("Enter a number: "))
+  if answer == num:
+    print("Corect")
+  else:
+    print("You lose")
+#056
+import random
+num = random.randint(1, 10)
+correct = False
+while correct == False:
+  guess = int(input("Enter a number: "))
+  if guess == num:
+    correct = True
+#057
+import random
+num = random.randint(1, 5)
+correct = False
+while correct == False:
+  guess = int(input("Enter a number: "))
+  if guess == num:
+    correct = True
+  elif guess > num: 
+    print("Too high")
+  else:
+    print("Too low")
+#058
+import random
+times = 5
+score = 0
+for i in range (0, 5):
+  num1 = random.randint(0,10)
+  num2 = random.randint(0,10)
+  answer = num1 + num2
+  print(num1, "+", num2,"=")
+  guess = int(input("Enter your answer: "))
+  if guess == answer:
+    score = score + 1
+print("Your score is", score, "out of 5")
+#059
+import random
+colour = random.choice(["BLUE", "GREEN"])
+print("BLUE, GREEN")
+choice = input("which one you want to choose?: ")
+choice.upper()
+if choice == colour:
+  print("Well done")
+else:
+  if colour == "BLUE":
+     print("You are probably feeling BLUE right now")
+  elif colour == "GREEN":
+    print("I bet you are GREEN with envy")
+    print(colour)
+
+#---------------------------HEART-------------------
+import turtle
+turtle.shape("turtle")
+turtle.right(270)
+for i in range(0, 36):
+  turtle.forward(3)
+  turtle.right(5)
+  
+turtle.right(180)
+
+for i in range(0, 36):
+  turtle.forward(3)
+  turtle.right(5)
+  
+for i in range(0, 3):
+  turtle.forward(10)
+  turtle.right(15) 
+  
+turtle.forward(60)
+for i in range(0, 3):
+  turtle.left(7)
+  turtle.forward(7)
+turtle.right(125)
+for i in range(0, 3):
+  turtle.left(7) 
+  turtle.forward(7)
+turtle.forward(60)
+
+for i in range(0, 3):
+  turtle.right(15) 
+  turtle.forward(10)
+
+turtle.exitonclick()
+
+#060
+    
 
 
+
+    
